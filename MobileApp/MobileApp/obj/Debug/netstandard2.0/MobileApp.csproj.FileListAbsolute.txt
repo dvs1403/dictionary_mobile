@@ -1,0 +1,12 @@
+C:\Users\Valery\source\repos\MobileApp\MobileApp\MobileApp\bin\Debug\netstandard2.0\MobileApp.deps.json
+C:\Users\Valery\source\repos\MobileApp\MobileApp\MobileApp\bin\Debug\netstandard2.0\MobileApp.dll
+C:\Users\Valery\source\repos\MobileApp\MobileApp\MobileApp\bin\Debug\netstandard2.0\MobileApp.pdb
+C:\Users\Valery\source\repos\MobileApp\MobileApp\MobileApp\obj\Debug\netstandard2.0\MobileApp.csprojAssemblyReference.cache
+C:\Users\Valery\source\repos\MobileApp\MobileApp\MobileApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Valery\source\repos\MobileApp\MobileApp\MobileApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Valery\source\repos\MobileApp\MobileApp\MobileApp\obj\Debug\netstandard2.0\MobileApp.csproj.CoreCompileInputs.cache
+C:\Users\Valery\source\repos\MobileApp\MobileApp\MobileApp\obj\Debug\netstandard2.0\MobileApp.AssemblyInfoInputs.cache
+C:\Users\Valery\source\repos\MobileApp\MobileApp\MobileApp\obj\Debug\netstandard2.0\MobileApp.AssemblyInfo.cs
+C:\Users\Valery\source\repos\MobileApp\MobileApp\MobileApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Valery\source\repos\MobileApp\MobileApp\MobileApp\obj\Debug\netstandard2.0\MobileApp.dll
+C:\Users\Valery\source\repos\MobileApp\MobileApp\MobileApp\obj\Debug\netstandard2.0\MobileApp.pdb

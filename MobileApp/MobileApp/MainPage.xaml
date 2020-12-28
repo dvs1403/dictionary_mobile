@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            x:Class="MobileApp.MainPage"
+                BackgroundColor="Black">
+    <ContentPage IconImageSource="wordslist.png">
+        <ContentPage.Resources>
+            <ResourceDictionary>
+                <x:Array  x:Key="words" Type="{x:Type x:String}">
+                    <x:String>Applae - Яблоко</x:String>
+                    <x:String>Car - Машина</x:String>
+                    <x:String>Table - Стол</x:String>
+                    <x:String>Mouse - Мышь</x:String>
+                </x:Array>
+            </ResourceDictionary>
+        </ContentPage.Resources>
+        <ContentPage.Content>
+
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <StackLayout BackgroundColor="#483D8B" HeightRequest="60" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Padding="0,0,0,0">
+                    <AbsoluteLayout Padding="0,0,0,0" Margin="0,0,0,0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="Dictionary" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0.1,0.5" FontSize="Large" AbsoluteLayout.LayoutFlags="XProportional,YProportional"/>
+
+                        <ImageButton Padding="14,14,14,14" Source="add.png" BorderWidth="0,0,0,0" AbsoluteLayout.LayoutBounds="1.01,0.5,0.2,1.2" AbsoluteLayout.LayoutFlags="All" Clicked="AddWord_Click"/>
+                    </AbsoluteLayout>
+                </StackLayout>
+                <ListView x:Name="wordsList" ItemSelected="WordsList_ItemSelected" />
+
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    <ContentPage IconImageSource="flashcards.png">
+        <ContentPage.Content>
+            <StackLayout>
+                <StackLayout BackgroundColor="#483D8B" HeightRequest="60" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Padding="0,0,0,0">
+                    <AbsoluteLayout Padding="0,0,0,0" Margin="0,0,0,0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="Flashcards" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0.1,0.5" FontSize="Large" AbsoluteLayout.LayoutFlags="XProportional,YProportional"/>
+
+                    </AbsoluteLayout>
+                </StackLayout>
+                <AbsoluteLayout Padding="0,0,0,0" Margin="0,0,0,0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <StackLayout BackgroundColor="Gray" AbsoluteLayout.LayoutBounds="0.5,0.5,0.7,0.5" AbsoluteLayout.LayoutFlags="All">
+                        <Label x:Name="FlashcardLabel" TextColor="White" FontAttributes="Bold" FontSize="40" Text="" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                        <Button Text="Check" Clicked="CheckFlashcard"/>
+                    </StackLayout>
+                </AbsoluteLayout>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    <ContentPage IconImageSource="myaccaunt.png">
+        <ContentPage.Content>
+            <StackLayout>
+            <StackLayout BackgroundColor="#483D8B" HeightRequest="60" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Padding="0,0,0,0">
+                    <AbsoluteLayout Padding="0,0,0,0" Margin="0,0,0,0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="My profile" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0.1,0.5" FontSize="Large" AbsoluteLayout.LayoutFlags="XProportional,YProportional"/>
+
+                        <ImageButton Padding="20,20,20,20" Source="edit.png" BorderWidth="0,0,0,0" AbsoluteLayout.LayoutBounds="1.01,0.5,0.2,1.2" AbsoluteLayout.LayoutFlags="All" Clicked="EditProfile"/>
+                    </AbsoluteLayout>
+            </StackLayout>
+            <StackLayout VerticalOptions="Start" HorizontalOptions="Center">
+                
+                <Label x:Name="Name" Text="Valerij" FontSize="50" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+                <Label Text="Statistics" Margin="0,50,0,15" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label x:Name="CountWordsLabel" Text="Word count: 0" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label x:Name="CountLearnWordsLabel" Text="Learned word count: 0" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center"/>
+            </StackLayout>
+
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+</TabbedPage>
+<!--</ContentPage>-->
